@@ -39,6 +39,7 @@ def pre_check() -> bool:
 
 
 def pre_start() -> bool:
+        print(f"Source path: {roop.globals.source_path}")
     if not is_image(roop.globals.source_path):
         update_status('Select an image for source path.', NAME)
         return False
